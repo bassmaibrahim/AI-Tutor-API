@@ -1,4 +1,4 @@
-# 📚 AI Tutor API
+#  AI Tutor API
 
 <p align="center">
 
@@ -8,17 +8,19 @@
 ![Groq](https://img.shields.io/badge/Groq-Llama_3.3_70B-black?style=for-the-badge)
 ![Flutter](https://img.shields.io/badge/Flutter-Mobile_App-02569B?style=for-the-badge&logo=flutter)
 ![Firebase](https://img.shields.io/badge/Firebase-Cloud-orange?style=for-the-badge&logo=firebase)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 </p>
 
 ---
 
-# 📖 Overview
+#  Overview
 
 **AI Tutor API** is an intelligent educational backend built with **FastAPI** that powers the AI Tutor inside a Flutter mobile learning application.
 
 The system allows students to upload educational documents and automatically transforms them into interactive learning resources using **Large Language Models (LLMs)**.
+
+# Full Project Demo 
+(https://drive.google.com/file/d/1CTW2vA_a3LyQrHkKPPUQi1Yc6qozEdto/view)
 
 Instead of simply summarizing documents, the AI Tutor creates a complete learning experience by generating:
 
@@ -33,7 +35,7 @@ The backend communicates with the Flutter application through REST APIs, while t
 
 ---
 
-# 🎯 Project Goals
+#  Project Goals
 
 The AI Tutor was designed to help students learn more efficiently by converting static educational documents into interactive study materials.
 
@@ -48,7 +50,7 @@ The system aims to:
 
 ---
 
-# ✨ Features
+# Features
 
 | Feature | Description |
 |----------|-------------|
@@ -66,7 +68,7 @@ The system aims to:
 
 ---
 
-# 🤖 AI Capabilities
+#  AI Capabilities
 
 The AI Tutor can automatically:
 
@@ -85,7 +87,7 @@ The AI Tutor can automatically:
 
 ---
 
-# 🏗️ System Architecture
+#  System Architecture
 
 ```text
                      ┌─────────────────────┐
@@ -135,7 +137,7 @@ The AI Tutor can automatically:
 
 ---
 
-# ⚙️ AI Processing Pipeline
+#  AI Processing Pipeline
 
 ```text
 Upload Document
@@ -176,7 +178,7 @@ Flutter Mobile Application
 
 ---
 
-# 🛠️ Technologies Used
+#  Technologies Used
 
 | Category | Technologies |
 |-----------|--------------|
@@ -191,7 +193,7 @@ Flutter Mobile Application
 | Deployment | Uvicorn |
 ---
 
-# 🔑 API Keys
+#  API Keys
 
 The AI Tutor API uses **three external services** to provide intelligent educational features.
 
@@ -207,7 +209,7 @@ The AI Tutor API uses **three external services** to provide intelligent educati
 
 ---
 
-# 📥 Getting API Keys
+#  Getting API Keys
 
 ## 1️⃣ Groq API
 
@@ -303,7 +305,7 @@ AIzaxxxxxxxxxxxxxxxxxxxxxxxx
 
 ---
 
-# ⚙️ Installation
+#  Installation
 
 ## 1. Clone the Repository
 
@@ -351,7 +353,7 @@ pip install python-magic-bin
 
 ---
 
-# 🌍 Environment Variables
+#  Environment Variables
 
 Create a `.env` file in the project root.
 
@@ -378,7 +380,7 @@ AI-Tutor-Backend/
 
 ---
 
-# ▶️ Run the Application
+#  Run the Application
 
 Start the FastAPI server:
 
@@ -394,7 +396,7 @@ http://127.0.0.1:8000
 
 ---
 
-# 📖 API Documentation
+#  API Documentation
 
 FastAPI automatically generates interactive API documentation.
 
@@ -418,7 +420,7 @@ Provides a clean, documentation-style view of the API.
 
 ---
 
-# ✅ Verify Installation
+#  Verify Installation
 
 If everything is configured correctly, opening
 
@@ -439,7 +441,7 @@ should display the available endpoints:
 
 ---
 
-# 📦 Dependencies
+#  Dependencies
 
 Main libraries used in the project include:
 
@@ -558,7 +560,7 @@ Examples:
 
 ---
 
-# 🏛 System Design
+#  System Design
 
 The project follows a modular service-oriented architecture.
 
@@ -599,7 +601,7 @@ JSON Response
 
 ---
 
-# 🔄 Request Flow
+#  Request Flow
 
 The following diagram illustrates how a document is processed.
 
@@ -666,7 +668,7 @@ Display Content     Text-to-Speech
 
 ---
 
-# 🧠 AI Workflow
+#  AI Workflow
 
 The backend follows a multi-stage AI pipeline.
 
@@ -754,17 +756,17 @@ The Flutter application receives one response containing every AI-generated lear
 
 ---
 
-# 🎯 Design Principles
+#  Design Principles
 
 This project was designed following software engineering best practices.
 
-### ✅ Separation of Concerns
+###  Separation of Concerns
 
 Each AI task is implemented in an independent service.
 
 ---
 
-### ✅ Scalability
+###  Scalability
 
 New AI features can be added without modifying existing services.
 
@@ -789,7 +791,7 @@ Business logic is separated from API routes, making the project easier to test a
 Each service can be reused independently by other applications through the REST API.
 ---
 
-# 🚀 API Documentation
+# API Documentation
 
 The AI Tutor Backend exposes RESTful APIs that allow the Flutter application to upload educational documents and receive AI-generated learning content.
 
@@ -801,7 +803,7 @@ http://127.0.0.1:8000
 
 ---
 
-# 📌 Available Endpoints
+# Available Endpoints
 
 | Method | Endpoint | Description |
 |----------|-----------------|--------------------------------|
@@ -881,7 +883,7 @@ embedded_systems.pdf
 
 ---
 
-# 📚 POST `/api/v1/process`
+# POST `/api/v1/process`
 
 Processes an educational document through the complete AI pipeline.
 
@@ -1030,7 +1032,7 @@ num_videos=5
 
 ---
 
-# ⚠️ Error Responses
+#  Error Responses
 
 ## Invalid File Type
 
@@ -1101,7 +1103,7 @@ num_videos=5
 
 ---
 
-# 🧪 Testing the API
+# Testing the API
 
 After running the server, open:
 
@@ -1121,7 +1123,7 @@ provides a cleaner documentation interface.
 
 ---
 
-# 📱 Flutter Integration
+#  Flutter Integration
 
 The Flutter mobile application communicates with the backend through REST APIs.
 
@@ -1180,7 +1182,7 @@ Flutter Text-to-Speech reads generated content aloud
 ```
 ---
 
-# 📂 Supported File Types
+# Supported File Types
 
 The AI Tutor currently supports the following document formats:
 
@@ -1194,7 +1196,7 @@ The AI Tutor currently supports the following document formats:
 
 ---
 
-# ❌ Validation & Rejection Reasons
+#  Validation & Rejection Reasons
 
 Before processing a document, the Smart Filter performs several validation checks.
 
@@ -1268,98 +1270,7 @@ Example response
 
 ---
 
-# 📷 Screenshots
-
-## Flutter Application
-
-### Login
-
-> *(Add Screenshot)*
-
----
-
-### Student Dashboard
-
-> *(Add Screenshot)*
-
----
-
-### Teacher Dashboard
-
-> *(Add Screenshot)*
-
----
-
-### Upload Lesson
-
-> *(Add Screenshot)*
-
----
-
-### AI Summary
-
-> *(Add Screenshot)*
-
----
-
-### AI Explanation
-
-> *(Add Screenshot)*
-
----
-
-### Quiz Generation
-
-> *(Add Screenshot)*
-
----
-
-### Question & Answer
-
-> *(Add Screenshot)*
-
----
-
-### YouTube Recommendations
-
-> *(Add Screenshot)*
-
----
-
-### Text-to-Speech
-
-> *(Add Screenshot)*
-
----
-
-### Swagger Documentation
-
-> *(Add Screenshot)*
-
----
-
-# 🚀 Future Improvements
-
-The project can be extended with additional AI-powered educational features.
-
-Planned improvements include:
-
-- 🧠 Flashcard Generation
-- 🗺️ Mind Map Generation
-- 📚 Personalized Study Plans
-- 🌍 Multi-language Support
-- 🎙️ Voice-based AI Tutor
-- 💬 Conversational AI Chatbot
-- 📊 Student Learning Analytics
-- 📝 Assignment Generator
-- 📖 Lesson Translation
-- 🧩 Adaptive Difficulty Quizzes
-- 📅 Smart Revision Scheduler
-- 🎓 AI Learning Recommendations
-
----
-
-# 🔒 Security
+# Security
 
 The project follows basic security practices:
 
@@ -1372,7 +1283,7 @@ The project follows basic security practices:
 
 ---
 
-# ⚡ Performance
+#  Performance
 
 The backend is optimized to:
 
@@ -1384,7 +1295,7 @@ The backend is optimized to:
 
 ---
 
-# 📖 Example Workflow
+# Example Workflow
 
 ```text
 Teacher uploads lesson
@@ -1421,35 +1332,6 @@ Flutter App
 
 ---
 
-# 🤝 Contributing
-
-Contributions are welcome!
-
-If you'd like to improve the project:
-
-1. Fork the repository.
-2. Create a new feature branch.
-
-```bash
-git checkout -b feature/new-feature
-```
-
-3. Commit your changes.
-
-```bash
-git commit -m "Add new feature"
-```
-
-4. Push your branch.
-
-```bash
-git push origin feature/new-feature
-```
-
-5. Open a Pull Request.
-
----
-
 # 👨‍💻 Author
 
 **Bassma Ibrahim**
@@ -1460,43 +1342,3 @@ Machine Learning Engineer • Data Scientist • AI Engineer
 - LinkedIn: https://www.linkedin.com/in/bassma-ibrahim/
 
 ---
-
-# 🙏 Acknowledgements
-
-Special thanks to:
-
-- Google Gemini
-- Groq
-- FastAPI
-- Flutter
-- Firebase
-- YouTube Data API
-- Open-source AI community
-
-for providing the tools and technologies that made this project possible.
-
----
-
-# 📄 License
-
-This project is licensed under the **MIT License**.
-
-You are free to use, modify, and distribute this project for educational and personal purposes.
-
-See the `LICENSE` file for more information.
-
----
-
-# ⭐ Support
-
-If you found this project useful:
-
-⭐ Star the repository
-
-🍴 Fork the project
-
-🐞 Report issues
-
-💡 Suggest new features
-
-Your support helps improve the project and motivates future development.
